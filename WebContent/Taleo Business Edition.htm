@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Taleo Business Edition</title>
+    <link type="text/css" rel="stylesheet" href="./css/UIv9/tbe-basic-dispatcher-blue.css">
+    
+</head>
+<body class="login">
+<div id="header">
+    <div class="logo">
+        <img class="logo" src="./img/taleo-be_logo.gif" width="249" height="26" alt="Taleo Business Edition">
+    </div>
+</div>
+<div class="container">
+    <div class="pubbox">
+        <h3>Secure Customer Login</h3>
+        <form autocomplete="OFF" action="/MANAGER/dispatcher/servlet/DispatcherServlet" method="post" name="theForm" onsubmit="return checkData();">
+            <input type="hidden" name="act" value="login">
+            
+            <table border="0" cellspacing="0" cellpadding="4" style="width: 100%">
+                <tbody><tr>
+                    <td class="text" colspan="2" style="padding-bottom: 10px">
+                        
+                        Please enter your User Name, Password
+                        and Company Code below to access your
+                        secure account.
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="uname">User name:</label>
+                        <input type="text" id="uname" name="uname" class="text" value="" size="35" maxlength="80">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pword">Password:</label>
+                        <input type="password" id="pword" name="pword" class="text" value="" size="35" maxlength="80">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="org">Company code:</label>
+                        <input type="text" id="org" name="org" class="text" value="DEVFACTORY" size="35" maxlength="80">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input class="btn btn-primary" value=" Login " type="submit">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <a href="/forgotPassword.jsp" class="smallText">Forgot your password?</a>
+                    </td>
+                </tr>
+            </tbody></table>
+        </form>
+    </div>
+    <div class="pubfooter">
+        <i>Copyright ?2002-2013 Taleo Corporation. All rights reserved.</i>
+    </div>
+</div>
+
+
+</body></html>
